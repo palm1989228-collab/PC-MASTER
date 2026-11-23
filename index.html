@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Ремонт, диагностика и настройка компьютеров, ноутбуков, приставок и другой техники в Солнечнодольске. Мастер Иван, более 8 лет практики.">
+    <meta name="theme-color" content="#15152b">
+    <title>PC MASTER — ремонт техники в Солнечнодольске</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="#top" aria-label="PC MASTER — на главную">
+            <span class="logo-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="5" width="14" height="14" rx="2"/>
+                    <rect x="9" y="9" width="6" height="6" rx="1"/>
+                    <path d="M9 2v3 M15 2v3 M9 19v3 M15 19v3"/>
+                    <path d="M2 9h3 M2 15h3 M19 9h3 M19 15h3"/>
+                </svg>
+            </span>
+            <span class="logo-copy">
+                <span class="logo-text">PC MASTER</span>
+                <span class="logo-caption">ТЕХНИЧЕСКАЯ ПОМОЩЬ РЯДОМ</span>
+            </span>
+        </a>
+
+        <nav aria-label="Основная навигация">
+            <a href="#services">Услуги</a>
+            <a href="#about">О мастере</a>
+            <a href="#prices">Цены</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="hero-kicker"><span class="kicker-dot"></span>Мастер Иван · Солнечнодольск</p>
+                <h1>Техника снова<br><span>в строю.</span></h1>
+                <p class="hero-description">
+                    Ремонт, диагностика и настройка компьютеров, ноутбуков и другой техники.
+                    Сначала разбираюсь в причине и согласую стоимость — затем приступаю к работе.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contacts" class="button">Связаться с Иваном <span aria-hidden="true">↗</span></a>
+                    <a href="#services" class="button button-secondary">Посмотреть услуги <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-meta" aria-label="Место и стаж мастера">
+                    <span><i aria-hidden="true">⌖</i> Солнечнодольск</span>
+                    <span><i aria-hidden="true">✳</i> Более 8 лет практики</span>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-orbit hero-orbit-one"></div>
+                <div class="hero-orbit hero-orbit-two"></div>
+                <div class="hero-board">
+                    <div class="board-topline"><span class="board-mark">PM</span><span>PC MASTER <i>· SERVICE</i></span><b><em></em> READY</b></div>
+                    <div class="board-chip"><span>PM</span><i></i></div>
+                    <div class="board-trace trace-one"></div>
+                    <div class="board-trace trace-two"></div>
+                    <div class="board-trace trace-three"></div>
+                    <div class="board-readout">
+                        <span class="readout-label">ПЕРВЫЙ ШАГ</span>
+                        <strong>Диагностика</strong>
+                        <div class="readout-price"><b>300 ₽</b><span>бесплатно при ремонте</span></div>
+                    </div>
+                </div>
+                <div class="hero-float hero-float-top"><span>ФОКУС</span><b>Ремонт техники</b></div>
+                <div class="hero-float hero-float-bottom"><span>ФОРМАТ</span><b>Дома и с выездом</b></div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2 class="reveal">Наши услуги</h2>
+
+            <div class="service-list">
+                <div class="service-card" data-service="windows" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="serviceModal">
+                    <h3>Установка Windows</h3>
+                    <p>Установка и настройка операционной системы.</p>
+                </div>
+
+                <div class="service-card" data-service="cleaning" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="serviceModal">
+                    <h3>Чистка ПК и ноутбуков</h3>
+                    <p>Удаление пыли и обслуживание системы охлаждения.</p>
+                </div>
+
+                <div class="service-card" data-service="thermal" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="serviceModal">
+                    <h3>Замена термопасты</h3>
+                    <p>Обслуживание процессора и видеокарты.</p>
+                </div>
+
+                <div class="service-card" data-service="diagnostics" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="serviceModal">
+                    <h3>Диагностика и ремонт</h3>
+                    <p>Поиск неисправностей и устранение проблем.</p>
+                </div>
+
+                <div class="service-card" data-service="build" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="serviceModal">
+                    <h3>Сборка компьютеров</h3>
+                    <p>Подбор комплектующих и сборка ПК.</p>
+                </div>
+
+                <div class="service-card" data-service="software" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="serviceModal">
+                    <h3>Драйверы, программы и настройка</h3>
+                    <p>Установка драйверов и необходимого ПО.</p>
+                </div>
+
+                <div class="service-card" data-service="viruses" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="serviceModal">
+                    <h3>Удаление вирусов</h3>
+                    <p>Проверка системы и устранение вредоносных программ.</p>
+                </div>
+
+                <div class="service-card" data-service="upgrade" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="serviceModal">
+                    <h3>Апгрейд компьютеров</h3>
+                    <p>Улучшение производительности компьютера.</p>
+                </div>
+            </div>
+            <p class="service-scope">
+                Также работаю с PlayStation, PSP, роутерами и серверами. Ремонт телефонов беру реже.
+            </p>
+        </section>
+        <!-- Всплывающее окно -->
+<div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle" tabindex="-1">
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose" type="button" aria-label="Закрыть окно">×</button>
+
+        <h2 id="modalTitle">Название услуги</h2>
+
+        <p id="modalDescription">
+            Здесь будет подробное описание услуги.
+        </p>
+    </div>
+</div>
+
+       <section id="about" class="about">
+    <div class="about-container">
+
+        <div class="about-photo">
+            <img src="images/Ivan.jpg" alt="Мастер Иван">
+        </div>
+
+        <div class="about-info">
+            <span class="about-label">ВАШ МАСТЕР</span>
+
+            <h2>Знакомьтесь, Иван</h2>
+
+            <p>
+                Меня зовут Иван. Я самоучка, около восьми лет занимаюсь диагностикой,
+                настройкой, восстановлением и ремонтом техники. В эту сферу пришёл
+                через компьютерные игры и интерес к дизайну интерьера.
+            </p>
+            <p>
+                Больше всего люблю находить сложные ошибки, восстанавливать устройства
+                и прошивать технику. Работаю с ПК, ноутбуками, PlayStation, PSP,
+                роутерами и серверами; телефоны беру реже.
+            </p>
+
+            <div class="about-stats">
+                <div>
+                    <strong>Более 8 лет</strong>
+                    <span>Практики и самообучения</span>
+                </div>
+
+                <div>
+                    <strong>Гарантия</strong>
+                    <span>Условия обсуждаем заранее</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <section id="prices" class="pricing">
+            <h2 class="reveal">Стоимость и условия</h2>
+
+            <div class="price-grid">
+                <article class="price-card price-card-featured reveal">
+                    <span class="price-label">Диагностика</span>
+                    <strong>300 ₽</strong>
+                    <p>Если после диагностики выполняется ремонт, восстановление или замена — она бесплатна.</p>
+                    <small>Обычно занимает от 10 минут до 1,5–2 часов — зависит от неисправности.</small>
+                </article>
+
+                <article class="price-card reveal">
+                    <span class="price-label">Фиксированные операции</span>
+                    <strong>По прайсу</strong>
+                    <p>Стоимость типовых работ согласуем до начала. Никаких скрытых доплат.</p>
+                </article>
+
+                <article class="price-card reveal">
+                    <span class="price-label">Сборка и комплектующие</span>
+                    <strong>Расчёт заранее</strong>
+                    <p>Цена зависит от выбранных деталей и их стоимости на момент заказа. Сначала согласуем состав и сумму.</p>
+                </article>
+            </div>
+
+            <p class="pricing-note">Принимаю наличную и безналичную оплату. Гарантия предоставляется; срок и условия обсуждаем до начала работ.</p>
+        </section>
+
+        <section id="contacts" class="contacts">
+    <h2 class="reveal">Связаться с мастером</h2>
+
+    <p>Солнечнодольск</p>
+    <p>Основной формат — работа на дому; выезд к клиенту тоже возможен.</p>
+    <p>Обычно работаю в Солнечнодольске. Другие населённые пункты Ставропольского края — по срочной договорённости.</p>
+    <p>Лучше записаться заранее: совмещаю ремонт с основной работой. Срочные заказы и приоритет согласуем отдельно.</p>
+
+    <div class="contact-methods">
+    <a class="contact-item" href="tel:+79383420628">
+        Позвонить
+    </a>
+
+    <a class="contact-item" href="sms:+79383420628">
+        Написать SMS
+    </a>
+
+    <a class="contact-item"
+       href="https://wa.me/79383420628"
+       target="_blank"
+       rel="noopener noreferrer">
+        WhatsApp
+    </a>
+
+    <a class="contact-item"
+       href="https://vk.ru/otmiv"
+       target="_blank"
+       rel="noopener noreferrer">
+        ВКонтакте
+    </a>
+
+    <a class="contact-item"
+    href="https://t.me/Mental_Di"
+    target="_blank"
+    rel="noopener noreferrer">
+    Telegram
+    </a>
+
+</div>
+
+<p class="contact-note">
+    +7 (938) 342-06-28
+</p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear">2026</span> PC MASTER · Солнечнодольск</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
